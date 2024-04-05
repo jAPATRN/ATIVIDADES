@@ -1,0 +1,25 @@
+package Aula09;
+import java.util.Scanner;
+public class atividade05 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+        System.out.println("Digite a nota do primeiro bimestre: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.println("Digite a nota do segundo bimestre: ");
+        double nota2 = scanner.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        System.out.printf("Nota do aluno no primeiro bimestre: %.2f\n", nota1);
+        System.out.printf("Nota do aluno no segundo bimestre: %.2f\n", nota2);
+        System.out.printf("Média final do aluno: %.2f\n", media);
+
+		
+		scanner.close();
+	}
+}
