@@ -1,14 +1,23 @@
-package Aula09;
+package Desafios;
 import java.util.Scanner;
-public class atividade07 {
+public class Desafio18 {
+	
     public static void main(String[] args) {
+    	
         Scanner scanner = new Scanner(System.in);
 
-        String minhaString = " teste 123 ";
-
-        System.out.println(minhaString);
-        System.out.println("teste 123");
-        System.out.println("teste 123");
+        String jubileu = " teste  123 ";
+        
+        String jubileuTrimmed = jubileu.trim();
+        
+        String jubileuamigo = jubileuTrimmed.replaceAll("\\s{2}", " ");
+        		
+        System.out.println(jubileu);
+        
+        System.out.println(jubileuTrimmed);
+        
+        System.out.println(jubileuamigo);
+        
         scanner.close();
     }
 }
