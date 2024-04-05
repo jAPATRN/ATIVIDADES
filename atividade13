@@ -1,0 +1,18 @@
+package Aula09;
+import java.util.Scanner;
+public class atividade02 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+		String meunome = "Guilherme Trento";
+		
+		String primeiro = meunome.split(" ")[0];
+
+		primeiro = primeiro.toUpperCase();
+		
+		System.out.println("Meu primeiro nome é: " +primeiro);
+		scanner.close();
+	}
+}
