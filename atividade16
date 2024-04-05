@@ -1,33 +1,25 @@
 package Aula09;
 import java.util.Scanner;
-public class atividade06 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public class atividade05 {
 
-        System.out.println("Digite a primeira string:");
-        String texto1 = scanner.nextLine();
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+        System.out.println("Digite a nota do primeiro bimestre: ");
+        double nota1 = scanner.nextDouble();
 
-        System.out.println("Digite a segunda string:");
-        String texto2 = scanner.nextLine();
+        System.out.println("Digite a nota do segundo bimestre: ");
+        double nota2 = scanner.nextDouble();
 
-        System.out.println("Digite a terceira string:");
-        String texto3 = scanner.nextLine();
-        
+        double media = (nota1 + nota2) / 2;
 
-        String maiorString = texto1;
-        
+        System.out.printf("Nota do aluno no primeiro bimestre: %.2f\n", nota1);
+        System.out.printf("Nota do aluno no segundo bimestre: %.2f\n", nota2);
+        System.out.printf("Média final do aluno: %.2f\n", media);
 
-        if (texto2.length() > maiorString.length()) {
-            maiorString = texto2;
-        }
-        
-
-        if (texto3.length() > maiorString.length()) {
-            maiorString = texto3;
-        }
-
-        System.out.println("A maior string é: " +maiorString);
-
-        scanner.close();
-    }
+		
+		scanner.close();
+	}
 }
