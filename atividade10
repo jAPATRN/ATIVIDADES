@@ -1,0 +1,68 @@
+package Desafios;
+import java.util.Scanner;
+public class Desafio10 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite um mês: (1) - Janeiro | (2) - Fevereiro | (3) - Março | (4) - Abril | (5) - Maio | (6) - Junho | (7) - Julho | (8) - Agosto | (9) - Setembro | (10) - Outubro | (11) - Novembro | (12) - Dezembro :");
+		
+		String mes = scanner.nextLine().toUpperCase();
+		
+		switch (mes) {
+		case "1":
+			System.out.print("Verão.");
+			break;
+		
+		case "2":
+			System.out.print("Verão.");
+			break;
+		
+		case "3":
+			System.out.print("Até dia 21 é Verão, após é Outono.");
+			break;
+			
+		case "4":
+			System.out.print("Outono.");
+			break;
+			
+		case "5":
+			System.out.print("Outono.");
+			break;
+			
+		case "6":
+			System.out.print("Até dia 21 é Outono, após é Inverno.");
+			break;
+			
+		case "7":
+			System.out.print("Inverno.");
+			break;
+			
+		case "8":
+			System.out.print("Inverno.");
+			break;
+			
+		case "9":
+			System.out.print("Até dia 23 é Inverno, após é Primavera.");
+			break;
+			
+		case "10":
+			System.out.print("Primavera.");
+			break;
+			
+		case "11":
+			System.out.print("Primavera.");
+			break;
+			
+		case "12":
+			System.out.print("Até dia 21 é Primavera, após é Verão.");
+			break;
+			
+		default:
+			System.out.print("Mês não reconhecido.");
+			break;	
+		}
+		scanner.close();
+	}
+}
