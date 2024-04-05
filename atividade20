@@ -1,0 +1,37 @@
+package Desafios;
+import java.util.Scanner;
+public class Desafio20 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+
+        String[] nomesAlunos = new String[3];
+        
+        double[][] notasAlunos = new double[3][2]; 
+
+        for (int i = 0; i < 3; i++) {
+        	
+            System.out.print("Digite o nome do " + (i + 1) + "º aluno: ");
+            nomesAlunos[i] = scanner.nextLine();
+
+            System.out.print("Digite a nota do primeiro bimestre do aluno " + nomesAlunos[i] + ": ");
+            notasAlunos[i][0] = scanner.nextDouble();
+
+            System.out.print("Digite a nota do segundo bimestre do aluno " + nomesAlunos[i] + ": ");
+            notasAlunos[i][1] = scanner.nextDouble();
+            
+            scanner.nextLine(); 
+        }
+
+        System.out.println("\nMédia dos Alunos:");
+        for (int i = 0; i < 3; i++) {
+            double media = (notasAlunos[i][0] + notasAlunos[i][1]) / 2;
+            System.out.println(nomesAlunos[i] + ": " + media);
+        }
+
+        scanner.close();
+
+	}
+
+}
