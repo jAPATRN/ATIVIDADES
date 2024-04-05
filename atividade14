@@ -1,0 +1,22 @@
+package Aula09;
+import java.util.Scanner;
+public class atividade03 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		System.out.println("Digite o nome de uma Cidade: ");
+		String cidade = scanner.next();
+		
+		if (cidade.equals("Curitiba")) {
+			System.out.println("É curitiba");
+		}
+		else {
+			System.out.println("Não é curitiba");
+		}
+		
+		scanner.close();
+	}
+}
