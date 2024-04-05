@@ -1,0 +1,21 @@
+package Desafios;
+import java.util.Scanner;
+public class Desafio09 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Digite um número: ");
+		double numero = scanner.nextInt();
+		
+		double resultado = numero;
+		
+		while (numero > 1) { 
+			resultado = resultado*(numero-1); numero--;
+		}
+		System.out.print("O resultado é: "+ resultado);
+		scanner.close();
+		
+	}
+}
